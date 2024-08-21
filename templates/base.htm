@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portafolio - Diana Bernardos{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('about') }}">Sobre mí</a></li>
+                <li><a href="{{ url_for('education') }}">Educación</a></li>
+                <li><a href="{{ url_for('experience') }}">Experiencia</a></li>
+                <li><a href="{{ url_for('projects') }}">Proyectos</a></li>
+                <li><a href="{{ url_for('contact') }}">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Diana Bernardos Moraleda</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+<section id="contact">
+    <h2>Contacto</h2>
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo Electrónico" required>
+        <textarea name="message" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/diana-bernardos-moraleda-536378223">LinkedIn</a>
+        <a href="https://github.com/Diana-Bernardos">GitHub</a>
+    </div>
+</section>
+{% endblock %}
